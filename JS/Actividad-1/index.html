@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Actividad #1</title>
 </head>
 <body>
-    <ul id="character">
-    </ul>
+    <div class="cht">
+        <ul id="character"></ul>
+    </div>
+    
+    <button id="prevPage" data-prev="">Anterior</button>
+    <button id="loadMore" data-next="" data-prev="" onclick="loadMore()">
+        Siguiente
+    </button>
     <script src="api.js"></script>
 </body>
 </html>

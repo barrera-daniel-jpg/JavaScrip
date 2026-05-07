@@ -42,6 +42,7 @@ renderHtml
 @param {object} data*/
 function renderHtml(data) {
     let element = document.getElementById("character");
+    element.innerHTML = ""; //Resetea la pagina al dar "siguiente"
     let resultCount = data.results.length;
     for (let index = 0; index < resultCount; index++) {
         let character = data.results[index];
@@ -53,3 +54,4 @@ function renderHtml(data) {
     }
 }
 const response = requestData(url_api);
+
